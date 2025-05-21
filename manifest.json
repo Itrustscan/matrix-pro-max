@@ -1,0 +1,14 @@
+{
+  "name": "iScanTrust PRO+ ULTRA",
+  "short_name": "iScanTrust",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#FFD700",
+  "description": "Mobile security diagnostic tool – Matrix Lux Edition.",
+  "icons": [{
+    "src": "icon.png",
+    "sizes": "192x192",
+    "type": "image/png"
+  }]
+}

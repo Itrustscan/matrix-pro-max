@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>iScanTrust PRO+ ULTRA – Matrix Spy Edition</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icon.png" />
+  <meta name="theme-color" content="#000000"/>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <div class="matrix-bg" id="matrixBg"></div>
+  <div class="container" id="mainContainer">
+    <h1>
+      <img src="icon.png" alt="iScanTrust Logo" class="logo"/>
+      iScanTrust <span>PRO+ ULTRA</span>
+    </h1>
+
+    <form id="consentForm">
+      <label class="consent"><input type="checkbox" id="consentLocation" /> Allow location access for risk analysis</label>
+      <label class="consent"><input type="checkbox" id="consentClipboard" /> Allow clipboard access test</label>
+      <label class="consent"><input type="checkbox" id="consentWebRTC" /> Allow WebRTC leak test</label>
+      <label class="consent"><input type="checkbox" id="consentCamera" /> Allow camera/microphone permissions check</label>
+      <label class="consent"><input type="checkbox" id="consentNotifications" /> Allow notifications permission check</label>
+      <label class="consent"><input type="checkbox" id="consentAll" /> Accept all (recommended)</label>
+      <button type="button" id="startBtn" onclick="startDiagnosis()">🔎 Start Matrix Diagnosis</button>
+    </form>
+    <div id="progressBar" class="progress-bar" style="display:none;">
+      <div class="progress"></div>
+      <span class="matrix-joke">If you see a white cat... ignore it!</span>
+    </div>
+    <pre id="resultsDisplay">{ Click Start Matrix Diagnosis for a full risk analysis... }</pre>
+
+    <div id="riskScoreBox"></div>
+
+    <h2>Matrix Help</h2>
+    <button onclick="showHelp(1)">What does the risk score mean?</button>
+    <button onclick="showHelp(2)">Can I use banking apps?</button>
+    <button onclick="showHelp(3)">What should I do next?</button>
+    <button onclick="showHelp(4)">I want the blue pill! (Matrix joke)</button>
+
+    <input type="email" id="emailInput" placeholder="Your email address (optional)" />
+    <button onclick="exportPDF()">💾 Export Matrix PDF</button>
+    <button onclick="showEmailInstructions()">✉️ Send report via email</button>
+
+    <footer class="footer">
+  <span style="color:#39FF14">Privacy by Design: No data is ever collected. 100% GDPR compliant. All analysis is done locally on your device. No information leaves your Matrix.</span><br>
+      <strong>Contact: iScanTrust@protonmail.com</strong><br>
+      Privacy: 100% local. Your data never leaves your Matrix.<br>
+      <span class="matrix-joke">No authors, no agents, just Matrix.</span><br>
+      <span style="color:#FFD700">2025 &copy; iScanTrust PRO+ ULTRA – Matrix Spy Edition</span>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

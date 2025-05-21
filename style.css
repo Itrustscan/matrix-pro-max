@@ -1,0 +1,131 @@
+
+body {
+  background: black;
+  color: gold;
+  font-family: 'Fira Mono', monospace;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.matrix-bg {
+  position: fixed;
+  z-index: 1;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+  max-width: 620px;
+  margin: 2rem auto;
+  border: 2px solid gold;
+  padding: 2rem 1.5rem 1rem 1.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 40px gold, 0 0 10px #111 inset;
+  background: rgba(0,0,0,0.92);
+}
+
+.logo {
+  width: 64px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.1rem;
+  margin-top: 0;
+}
+h1 span { color: orange; }
+
+button {
+  background: gold;
+  color: black;
+  font-weight: bold;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 0.6rem;
+  font-size: 1.1rem;
+  width: 100%;
+  margin: 0.5rem 0;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px #FFD70066;
+}
+button:hover {
+  background: #FFFACD;
+}
+
+input[type="email"] {
+  width: 100%;
+  padding: 0.9rem;
+  margin-top: 1rem;
+  font-size: 1.05rem;
+  border-radius: 0.5rem;
+  border: 1px solid #FFD700;
+  background: #222;
+  color: gold;
+}
+
+pre {
+  background: #111;
+  color: #39FF14;
+  padding: 1.2rem;
+  border: 1.5px dashed gold;
+  border-radius: 0.5rem;
+  white-space: pre-wrap;
+  margin-top: 1rem;
+  font-size: 1.08rem;
+  min-height: 180px;
+  font-family: 'Fira Mono', monospace;
+}
+
+.footer {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #aaa;
+  margin-top: 2.2rem;
+}
+
+.consent {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 32px;
+  background: #222;
+  border-radius: 0.6rem;
+  margin: 1rem 0;
+  overflow: hidden;
+  border: 1.5px solid #FFD700;
+  position: relative;
+}
+.progress {
+  height: 100%;
+  background: linear-gradient(90deg, #39FF14 30%, #FFD700 100%);
+  width: 0%;
+  transition: width 0.8s cubic-bezier(.7,.3,.3,1);
+}
+.matrix-joke {
+  position: absolute;
+  right: 10px; top: 6px;
+  color: #FFD70099;
+  font-size: 0.90rem;
+}
+#riskScoreBox {
+  text-align: center;
+  margin: 1rem 0 0.5rem 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+@media (max-width: 720px) {
+  .container { padding: 1rem 0.4rem 0.5rem 0.4rem; }
+  h1 { font-size: 1.3rem; }
+  .logo { width: 40px; }
+}
